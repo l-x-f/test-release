@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:utils": "echo \"build:utils\" && exit 1",
+    "lint": "echo \"lint\" && exit 1",
+    "test": "echo \"test\" && exit 1"
   },
   "keywords": [],
   "author": "",
