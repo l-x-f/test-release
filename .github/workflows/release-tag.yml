@@ -18,10 +18,10 @@ jobs:
         uses: actions/checkout@master
       - name: Create Release for Tag
         id: release_tag
-        uses: elgohr/Github-Release-Action@v4
+        uses: actions/create-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
+          tag_name: ${{ github.ref }} 
           body: |
             Please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.
