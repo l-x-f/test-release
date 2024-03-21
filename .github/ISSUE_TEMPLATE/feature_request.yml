@@ -27,6 +27,8 @@ body:
     attributes:
       label: 描述
       placeholder: 描述
+    validations:
+      required: true
   - type: textarea
     id: additional-comments
     attributes:
