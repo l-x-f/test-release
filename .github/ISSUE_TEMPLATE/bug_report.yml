@@ -59,7 +59,6 @@ body:
     attributes:
       label: 构建工具 
       description:  如：Vite@5.0.5，Webpack@4.0.0。其他常见的构建工具 Vue CLI、Rollup、esbuild、Nuxt、CDN等
-      placeholder: 构建工具
       options:
         - Vite
         - Webpack
