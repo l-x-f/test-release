@@ -17,21 +17,36 @@ body:
     id: version
     attributes:
       label: plus-pro-components 版本
+      placeholder: 版本号
+    validations:
+      required: true
+  - type: input
+    id: vue-version
+    attributes:
+      label: vue 版本
+      placeholder: 版本号
+    validations:
+      required: true
+  - type: input
+    id: element-plus-version
+    attributes:
+      label: element-plus 版本
+      placeholder: 版本号
     validations:
       required: true
   - type: input
     id: reproduction-link
     attributes:
       label: 最小复现环境的链接
-      description: 请不要随意填写链接。如果没有提供有效的地址制，该问题将被关闭。
-      placeholder: 输入github仓库地址或者其他可复现的链接地址
+      description: 请提供有效的地址链接。如：github仓库地址、[gitee](https://gitee.com/)仓库地址、[JSFiddle](https://jsfiddle.net/) 地址 、[CodePen](https://codepen.io/)地址、[CodeSandbox](https://codesandbox.io/)地址等。 
+      placeholder: 链接地址    
     validations:
-      required: true      
+      required: true
   - type: textarea
     id: steps-to-reproduce
     attributes:
       label: 复现步骤
-      description: 在打开您的repro后，我们需要做什么才能让bug发生？清晰简洁的复制说明对我们能够及时分类您的问题非常重要。请注意，您可以使用Markdown来格式化列表和代码。
+      description: 在打开您的repro后，我们需要怎样做什么才能让bug发生？清晰简洁的说明对我们能够及时分类您的问题非常重要。请注意，您可以使用Markdown来格式化列表和代码。
       placeholder: 复现步骤
     validations:
       required: true
@@ -53,12 +68,12 @@ body:
       label: 系统信息
       description: 执行 `npx envinfo --system --npmPackages vue,element-plus,plus-pro-components --binaries --browsers`
       render: shell
-      placeholder: 系统信息
+      placeholder: 浏览器 / 操作系统 / 运行环境
   - type: dropdown
     id: build-tools
     attributes:
       label: 构建工具 
-      description:  如：Vite@5.0.5，Webpack@4.0.0。其他常见的构建工具 Vue CLI、Rollup、esbuild、Nuxt、CDN等
+      description:  Vite，Webpack等
       options:
         - Vite
         - Webpack
