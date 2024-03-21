@@ -68,7 +68,7 @@ body:
       label: 系统信息
       description: 执行 `npx envinfo --system --npmPackages vue,element-plus,plus-pro-components --binaries --browsers`
       render: shell
-      placeholder: 浏览器 / 操作系统 / 运行环境
+      placeholder: 浏览器、操作系统、运行环境
   - type: dropdown
     id: build-tools
     attributes:
@@ -87,5 +87,5 @@ body:
   - type: textarea
     id: additional-comments
     attributes:
-      label: 额外留言（可选）
+      label: 额外留言 
       description: 例如，您如何遇到此错误的一些背景/上下文。
