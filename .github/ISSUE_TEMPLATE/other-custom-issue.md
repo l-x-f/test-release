@@ -1,5 +1,5 @@
 ---
-name: 'Other custom issue '
+name: Other custom issue
 about: Custom issue
 title: ''
 labels: ''
