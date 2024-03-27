@@ -1,5 +1,5 @@
 ---
-name: ".Custom issue "
+name: 'Other custom   Issue '
 about: Custom issue
 title: ''
 labels: ''
